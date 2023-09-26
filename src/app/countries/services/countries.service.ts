@@ -76,9 +76,7 @@ export class CountriesService {
     if (!borders || borders.length === 0) return of([]);
     const countriesRequests: Observable<SmallCountry>[] = [];
     borders.forEach((code) => {
-      console.log(code);
       const request = this.getCountryByAlphaCode(code);
-      console.log(request);
       countriesRequests.push(request);
     });
     return combineLatest(countriesRequests);

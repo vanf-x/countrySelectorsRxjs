@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: '',
     children: [
-      { path: 'selector', component: SelectorPageComponent },
+      { path: '', component: SelectorPageComponent },
       { path: 'selector', redirectTo: 'selector' },
     ],
   },
